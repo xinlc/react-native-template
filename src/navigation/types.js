@@ -1,0 +1,15 @@
+export const NAVIGATION_HOME_SCREEN_PATH = 'homescreen';
+export const NAVIGATION_SEARCH_PRODUCT_PATH = 'search_product';
+export const NAVIGATION_HOME_STACK_PATH = 'home';
+export const NAVIGATION_ACCOUNT_PATH = 'account';
+export const NAVIGATION_SIGNUP_PATH = 'singup';
+export const NAVIGATION_SIGNIN_PATH = 'signin';
+export const NAVIGATION_RESET_PASSWORD_PATH = 'navigation_reset_password_path';
+export const NAVIGATION_AUTH_STACK_PATH = 'auth';
+export const NAVIGATION_AUTH_LOADING_SWITCH = 'navigation_auth_loading_switch';
+export const NAVIGATION_LOGIN_STACK_PATH = 'login_stack';
+export const NAVIGATION_ACCOUNT_STACK_PATH = 'account_stack';
+export const NAVIGATION_SEARCH_SCREEN_PATH = 'search';
+export const NAVIGATION_ADDRESS_SCREEN_PATH = 'address';
+export const NAVIGATION_DRAWER_SCREEN = 'drawer_screen';
+export const BOTTOM_TAB_NAVIGATOR = 'bottom_tab_navigator';
