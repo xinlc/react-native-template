@@ -6,12 +6,13 @@ import {
   StyleSheet
 } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-import { Spinner, Button, Text } from 'native-base';
+import { Spinner, Button } from 'native-base';
 import { Status } from '../../store/actionsTypes';
 import { signIn } from '../../store/actions';
 import {
   NAVIGATION_SIGNUP_PATH,
 } from '../../navigation/types';
+import { Text } from '../../components';
 
 
 const SignInPage = ({ navigation }) => {
@@ -34,7 +35,7 @@ const SignInPage = ({ navigation }) => {
   };
 
   const renderButtons = () => {
-    if (status === Status.STATUS_LOADING) {
+    if (status === Status.STATUS_STATUS_LOADING) {
       return <Spinner style={[styles.defaultMargin]} />;
     }
     return (
@@ -51,17 +52,17 @@ const SignInPage = ({ navigation }) => {
           style={[styles.defaultMargin, styles.center]}
           onPress={() => navigation.navigate(NAVIGATION_SIGNUP_PATH)}
         >
-          <Text>Create an account(Signup)</Text>
+          <Text type="subheading">Create an account(Signup)</Text>
         </TouchableOpacity>
       </View>
     );
   };
 
   const handleStatusChange = () => {
-    if (status === Status.ERROR) {
+    if (status === Status.STATUS_ERROR) {
       return <Text type="subheading" style={styles.errorText}>{errorMessage}</Text>;
     }
-    if (status === Status.SUCCESS) {
+    if (status === Status.STATUS_SUCCESS) {
       navigation.popToTop();
     }
     return null;
