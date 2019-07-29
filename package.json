@@ -7,7 +7,10 @@
     "restart": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "start_8082": "node node_modules/react-native/local-cli/cli.js start --port 8082",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "flow": "flow",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.5.1",
@@ -25,7 +28,9 @@
     "redux-saga": "^1.0.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "7.5.5",
+    "@babel/preset-flow": "^7.0.0",
     "@babel/runtime": "7.5.5",
     "@react-native-community/eslint-config": "0.0.3",
     "babel-eslint": "^10.0.2",
@@ -37,6 +42,8 @@
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^1.6.1",
     "eslint-plugin-react-native": "^3.7.0",
+    "flow-bin": "^0.103.0",
+    "flow-typed": "^2.6.0",
     "jest": "24.8.0",
     "metro-react-native-babel-preset": "0.54.1",
     "react-test-renderer": "16.8.6"
