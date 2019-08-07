@@ -35,5 +35,15 @@ export const Status = Object.freeze({
 
 export const CUSTOMER_TOKEN = 'CUSTOMER_TOKEN';
 
-export const ACTION_USER_LOGOUT = 'USER_LOGOUT';
-export const RESET_AUTH_STATE = 'RESET_AUTH_STATE';
+/**
+ |--------------------------------------------------
+ | DEFINE ACTION TYPE
+ | this will be reused in the reducer and service
+ | FORMAT:
+ | for reducer action [FILENAME]_[ACTION]_TYPE
+ | for service action [FILENAME]_[ACTION]_SERVICE_TYPE
+ |--------------------------------------------------
+ */
+
+export const ACTION_USER_LOGOUT/* : ACTION_USER_LOGOUT */ = 'USER_LOGOUT';
+export const RESET_AUTH_STATE/* : RESET_AUTH_STATE */ = 'RESET_AUTH_STATE';
