@@ -1,6 +1,8 @@
 
 # react-native-template
 
+[typescript-template](https://github.com/xinlc/react-native-typescript-template)
+
 ## Installation
 
 ```bash
